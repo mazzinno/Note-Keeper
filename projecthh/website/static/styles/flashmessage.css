@@ -1,0 +1,35 @@
+.flash-message {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1;
+    text-align: center; 
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
