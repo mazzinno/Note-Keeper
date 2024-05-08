@@ -1,0 +1,52 @@
+.note-container {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.notebtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notebtn:hover {
+    background-color: #0056b3;
+}
+
+/* this is css for notes list */
+
+.notes-list {
+    padding-right: 20px; /* Add some padding to avoid content getting cut off by the scrollbar */
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.notes-list li {
+    margin-bottom: 10px; /* Add margin between notes */
+    padding: 5px 10px; /* Add padding inside each note */
+    border: 1px solid #ccc; /* Add a border around each note */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    max-width: 600px;
+}
+
+.notes-list li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: red;
+}

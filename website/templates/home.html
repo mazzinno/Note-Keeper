@@ -3,13 +3,20 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="home-container">
-    <h1>Welcome to Your Private Note Keeper</h1>
-    <p>Keep your notes safe and organized. Access them from anywhere, anytime.</p>
-    <a href="/signup" class="cta-btn">Sign Up Now</a>
-
-    <div class="login-link">
-        <p>Already have an account? <a href="/login">Login</a></p>
-    </div>
+<div style="margin-top: 100px;">
+    <h1 style="text-align: center;">Your Notes</h1>
+    <ul class="notes-list">
+        {% for note in user.notes %}
+        <li>{{ note.data }}
+            <button class="delete-btn" onclick="deleteNote({{ note.id }})">Delete</button>
+        </li>
+        {% endfor %}
+    </ul>
+    <form style="margin-bottom: 40px;" method="POST">
+        <textarea class="note-container" name="note" id="note" placeholder="Write your note here..."></textarea>
+        <div>
+            <button class="notebtn" type="submit">Save Note</button>
+        </div>
+    </form>
 </div>
 {% endblock %}
