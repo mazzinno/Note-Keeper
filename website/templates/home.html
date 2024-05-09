@@ -7,7 +7,8 @@
     <h1 style="text-align: center;">Your Notes</h1>
     <ul class="notes-list">
         {% for note in user.notes %}
-        <li>{{ note.data }}
+        <li>
+            {{ note.data }}
             <button class="delete-btn" onclick="deleteNote({{ note.id }})">Delete</button>
         </li>
         {% endfor %}

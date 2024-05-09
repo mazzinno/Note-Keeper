@@ -40,6 +40,7 @@
     border: 1px solid #ccc; /* Add a border around each note */
     border-radius: 5px; /* Add border radius for rounded corners */
     max-width: 600px;
+    word-break: break-word;
 }
 
 .notes-list li:hover {
@@ -47,6 +48,3 @@
     cursor: pointer;
 }
 
-.delete-btn{
-    background-color: red;
-}

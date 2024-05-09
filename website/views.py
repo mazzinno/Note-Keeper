@@ -19,6 +19,7 @@ def home():
             db.session.add(new_note)
             db.session.commit()
             flash('Note added!', category='success')
+        return redirect(url_for('views.home'))
 
     return render_template('home.html', user=current_user)
 
