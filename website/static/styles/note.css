@@ -1,5 +1,5 @@
 .note-container {
-    width: 100%;
+    width: 600px;
     height: 200px;
     padding: 10px;
     box-sizing: border-box;
@@ -28,23 +28,49 @@
 /* this is css for notes list */
 
 .notes-list {
-    padding-right: 20px; /* Add some padding to avoid content getting cut off by the scrollbar */
-    list-style-type: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    padding-right: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+
 .notes-list li {
-    margin-bottom: 10px; /* Add margin between notes */
-    padding: 5px 10px; /* Add padding inside each note */
-    border: 1px solid #ccc; /* Add a border around each note */
-    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     max-width: 600px;
+    min-width: 600px;
     word-break: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-content {
+    flex: 1;
 }
 
 .notes-list li:hover {
-    background-color: #f0f0f0;
+    background-color: white;
     cursor: pointer;
+    max-height: none;
 }
 
+/* delete button  */
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

@@ -3,21 +3,25 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div style="margin-top: 100px;">
-    <h1 style="text-align: center;">Your Notes</h1>
-    <ul class="notes-list">
-        {% for note in user.notes %}
-        <li>
-            {{ note.data }}
-            <button class="delete-btn" onclick="deleteNote({{ note.id }})">Delete</button>
-        </li>
-        {% endfor %}
-    </ul>
+<div style="margin-top: 130px; margin-bottom: 60px;">
     <form style="margin-bottom: 40px;" method="POST">
         <textarea class="note-container" name="note" id="note" placeholder="Write your note here..."></textarea>
         <div>
             <button class="notebtn" type="submit">Save Note</button>
         </div>
     </form>
+    <h1 style="text-align: center;">Your Notes</h1>
+    <ul class="notes-list">
+        {% for note in user.notes %}
+        <li>
+            <div class="note-content">
+                {{ note.data }}
+            </div>
+            <div>
+                <button class="delete-button" onclick="deleteNote({{ note.id }})">Delete</button>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock %}
