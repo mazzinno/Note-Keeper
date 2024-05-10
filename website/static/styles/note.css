@@ -74,3 +74,8 @@
 .delete-button:hover {
     background-color: #c82333;
 }
+
+.required {
+    color: red;
+    margin-left: 2px;
+}
