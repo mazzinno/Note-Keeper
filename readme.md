@@ -38,10 +38,10 @@ A secure and private web application for creating and logging into accounts to s
 After cloning the project Navigate to the project directory:
     ```bash
     cd Final-project
-    ```
+
 
 To run the project locally:
-    ```python
+    ```python3
     python3 app.py
 
 Visit http://127.0.0.1:5000 in your browser.
