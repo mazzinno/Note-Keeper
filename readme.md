@@ -32,3 +32,9 @@ A secure and private web application for creating and logging into accounts to s
 1. Clone the repo:
    ```bash
    git clone https://github.com/mazzinno/Final-project.git
+
+### Usage
+
+To run the project locally:
+    '''python3
+    python3 app.py
