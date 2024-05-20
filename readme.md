@@ -31,14 +31,13 @@ A secure and private web application for creating and logging into accounts to s
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/mazzinno/Final-project.git
+   git clone https://github.com/mazzinno/Note-Keeper.git
 
 ### Usage
 
 1. After cloning the project Navigate to the project directory:
     ```bash
-    cd Final-project
-
+    cd Note-Keeper
 
 2. run the project locally:
     ```bash
