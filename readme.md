@@ -35,16 +35,30 @@ A secure and private web application for creating and logging into accounts to s
 
 ### Usage
 
+After cloning the project Navigate to the project directory:
+    ```bash
+    cd Final-project
+    ```
+
 To run the project locally:
 
-```python
-python3 app.py
-```
+    ```python
+    python3 app.py
+    ```
 
 Visit http://127.0.0.1:5000 in your browser.
 
-### Prerequisites
+### 📦 Features
 - User authentication with Flask-Login
 - Secure password hashing
 - Create and delete personal notes
 - Responsive and user-friendly interface
+
+### 📫 Contribute
+Thank you for your interest in contributing to this project. At this time, we are not accepting external contributions. However, we appreciate your enthusiasm and encourage you to use the project, provide feedback, and share your thoughts.
+
+### Documentations 
+
+- [Flask Documentation](https://flask.palletsprojects.com/)
+- [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
+- [Python Documentation](https://docs.python.org/)
