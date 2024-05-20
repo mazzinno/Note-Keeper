@@ -36,5 +36,14 @@ A secure and private web application for creating and logging into accounts to s
 ### Usage
 
 To run the project locally:
-    '''python3
-    python3 app.py
+
+```python
+python3 app.py
+
+Visit http://127.0.0.1:5000 in your browser.
+
+### Prerequisites
+- User authentication with Flask-Login
+- Secure password hashing
+- Create and delete personal notes
+- Responsive and user-friendly interface
